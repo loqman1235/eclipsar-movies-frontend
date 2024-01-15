@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/LOGO.svg";
+import Avatar from "../assets/avatar.svg";
+
 import { MagnifyingGlassIcon, BellIcon } from "@heroicons/react/24/outline";
 
 const Navbar = () => {
@@ -12,7 +14,9 @@ const Navbar = () => {
         items-center
         justify-between
         px-10
-        relative
+        fixed
+        top-0
+        z-10
         "
     >
       {/* Navigation Menu */}
@@ -20,7 +24,7 @@ const Navbar = () => {
         className="
       flex
       items-center
-      gap-7
+      gap-6
       "
       >
         {/* <li>
@@ -57,7 +61,7 @@ const Navbar = () => {
       </Link>
 
       {/* Right Navigation */}
-      <ul className="flex items-center gap-7">
+      <ul className="flex items-center gap-6">
         <li>
           <button>
             <MagnifyingGlassIcon className="w-6 h-6 stroke-2" />
@@ -70,7 +74,13 @@ const Navbar = () => {
           <span className="absolute right-0 top-0 w-3 h-3 bg-primary-500 rounded-full border-2 border-background-500"></span>
         </li>
         <li>
-          <div className="w-9 h-9 rounded-full overflow-hidden bg-white/20"></div>
+          <div className="w-9 h-9 rounded-full overflow-hidden bg-white/20">
+            <img
+              src={Avatar}
+              alt="avatar"
+              className="w-full h-full bg-contain"
+            />
+          </div>
         </li>
       </ul>
     </div>
