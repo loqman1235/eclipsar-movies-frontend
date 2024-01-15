@@ -1,7 +1,7 @@
 import { MdPlayArrow, MdVideocam } from "react-icons/md";
-import { HeroCarouselSlideProps } from "../types";
+import { IMovie } from "../types";
 
-const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
+const HeroCarouselSlide: React.FC<IMovie> = ({
   title,
   overview,
   backdrop,
@@ -21,8 +21,15 @@ const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
         before:inset-0
         before:bg-gradient-to-r
         before:from-background-500
-        before:via-background-500/95
-        before:to-background-500/60
+        before:via-background-500/90
+        before:to-transparent
+        after:absolute 
+        after:w-full
+        after:bottom-0
+        after:h-1/2
+        after:bg-gradient-to-t
+        after:from-background-500
+        after:to-transparent
     "
       >
         <img
@@ -63,15 +70,14 @@ const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
           to-emerald-300 
           text-background-500 
           rounded-full
-          font-semibold 
-          text-lg
+          font-bold 
+          text-base
           flex 
           items-center 
           gap-1
           justify-center
           shadow-md
           uppercase
-          tracking-tight
           "
           >
             <MdPlayArrow size={24} /> Play Now
@@ -84,15 +90,14 @@ const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
           hover:bg-white/15
           transition 
           rounded-full
-          font-semibold 
-          text-lg
+          font-bold 
+          text-base
           flex 
           items-center 
           gap-1
           justify-center
           shadow-md
           uppercase
-          tracking-tight
           "
           >
             <MdVideocam size={24} /> Trailer

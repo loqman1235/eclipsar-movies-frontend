@@ -4,6 +4,9 @@ import Avatar from "../assets/avatar.svg";
 import { MdOutlineSearch, MdOutlineNotifications } from "react-icons/md";
 
 const Navbar = () => {
+  const navLinkStyles =
+    "text-base hover:text-primary-500 transition font-semibold uppercase";
+
   return (
     <div
       className="
@@ -16,49 +19,43 @@ const Navbar = () => {
         fixed
         top-0
         z-10
+        bg-gradient-to-b
+        from-background-500
+        via-background-500/80
+        to-transparent
         "
     >
-      {/* Navigation Menu */}
-      <ul
-        className="
+      <div className="flex items-center gap-12">
+        {/* Logo */}
+        <Link to="/">
+          <img src={Logo} alt="Eclipsar logo" />
+        </Link>
+
+        {/* Navigation Menu */}
+        <ul
+          className="
       flex
       items-center
       gap-6
       "
-      >
-        {/* <li>
-          <Link
-            to="/"
-            className="text-lg hover:text-primary-500 transition font-medium uppercase"
-          >
-            Home
-          </Link>
-        </li> */}
-        <li>
-          <Link
-            to="/"
-            className="text-lg hover:text-primary-500 transition font-medium uppercase"
-          >
-            Movies
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/"
-            className="text-lg hover:text-primary-500 transition font-medium uppercase"
-          >
-            TV Shows
-          </Link>
-        </li>
-      </ul>
-
-      <Link
-        to="/"
-        className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
-      >
-        <img src={Logo} alt="Eclipsar logo" />
-      </Link>
-
+        >
+          <li>
+            <Link to="/" className={navLinkStyles}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className={navLinkStyles}>
+              Movies
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className={navLinkStyles}>
+              TV Shows
+            </Link>
+          </li>
+        </ul>
+      </div>
       {/* Right Navigation */}
       <ul className="flex items-center gap-6">
         <li>

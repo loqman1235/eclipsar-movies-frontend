@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply font-sans bg-background-500 text-white;
+    @apply font-sans bg-gradient-to-b via-background-500 from-background-500 to-accent-500 text-white scroll-smooth;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-2 bg-background-500;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/30 rounded-full;
   }
 }
