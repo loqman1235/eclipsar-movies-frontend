@@ -1,4 +1,4 @@
-import { PlayIcon } from "@heroicons/react/24/solid";
+import { MdPlayArrow, MdVideocam } from "react-icons/md";
 import { HeroCarouselSlideProps } from "../types";
 
 const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
@@ -57,7 +57,7 @@ const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
           <button
             className="
           py-3 
-          px-8 
+          px-6 
           bg-gradient-to-tr
           from-primary-500 
           to-emerald-300 
@@ -69,16 +69,17 @@ const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
           items-center 
           gap-1
           justify-center
-          shadow
+          shadow-md
           uppercase
+          tracking-tight
           "
           >
-            Play Now
+            <MdPlayArrow size={24} /> Play Now
           </button>
           <button
             className="
           py-3 
-          px-8 
+          px-6
           bg-white/10
           hover:bg-white/15
           transition 
@@ -89,11 +90,12 @@ const HeroCarouselSlide: React.FC<HeroCarouselSlideProps> = ({
           items-center 
           gap-1
           justify-center
-          shadow
+          shadow-md
           uppercase
+          tracking-tight
           "
           >
-            Trailer
+            <MdVideocam size={24} /> Trailer
           </button>
         </div>
       </div>

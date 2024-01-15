@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/LOGO.svg";
 import Avatar from "../assets/avatar.svg";
-
-import { MagnifyingGlassIcon, BellIcon } from "@heroicons/react/24/outline";
+import { MdOutlineSearch, MdOutlineNotifications } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -64,12 +63,12 @@ const Navbar = () => {
       <ul className="flex items-center gap-6">
         <li>
           <button>
-            <MagnifyingGlassIcon className="w-6 h-6 stroke-2" />
+            <MdOutlineSearch size={24} />
           </button>
         </li>
         <li className="relative">
           <button>
-            <BellIcon className="w-6 h-6 stroke-2" />
+            <MdOutlineNotifications size={24} />
           </button>
           <span className="absolute right-0 top-0 w-3 h-3 bg-primary-500 rounded-full border-2 border-background-500"></span>
         </li>
