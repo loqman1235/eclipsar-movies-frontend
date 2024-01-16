@@ -14,7 +14,7 @@ const Collection: React.FC<ICollection> = ({ name, movies }) => {
         slidesPerView={4.5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className="w-full pl-10"
+        className="w-full px-10"
       >
         {movies.map((movie) => (
           <SwiperSlide key={movie._id}>
