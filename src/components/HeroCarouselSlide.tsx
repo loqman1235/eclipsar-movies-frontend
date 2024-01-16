@@ -39,7 +39,7 @@ const HeroCarouselSlide: React.FC<IMovie> = ({
         />
       </div>
       <div className="absolute top-1/2 left-10 -translate-y-1/2 w-3/4 md:w-1/2">
-        <h1 className="text-3xl md:text-4xl uppercase font-bold  drop-shadow leading-[40px] mb-1 md:mb-2">
+        <h1 className="text-3xl tracking-tighter md:text-4xl uppercase font-extrabold  drop-shadow leading-[40px] mb-1 md:mb-2 bg-clip-text bg-gradient-to-t from-gray-100  to-white text-transparent">
           {title}
         </h1>
         <div className="flex items-center gap-3 mb-1 md:mb-2 w-full font-semibold">
@@ -78,6 +78,7 @@ const HeroCarouselSlide: React.FC<IMovie> = ({
           justify-center
           shadow-md
           uppercase
+          tracking-tight
           "
           >
             <MdPlayArrow size={24} /> Play Now
@@ -98,6 +99,7 @@ const HeroCarouselSlide: React.FC<IMovie> = ({
           justify-center
           shadow-md
           uppercase
+          tracking-tight
           "
           >
             <MdVideocam size={24} /> Trailer

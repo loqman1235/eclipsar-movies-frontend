@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const navLinkStyles =
-    "text-base hover:text-primary-500 transition font-semibold uppercase";
+    "text-base hover:text-primary-500 transition font-semibold uppercase tracking-tight";
   const [isNavbarActive, setIsNavbarActive] = useState(false);
   const navbarRef = useRef<HTMLDivElement | null>(null);
 
@@ -62,9 +62,10 @@ const Navbar = () => {
         {/* Navigation Menu */}
         <ul
           className="
-      flex
+      md:flex
       items-center
       gap-6
+      hidden
       "
         >
           <li>
