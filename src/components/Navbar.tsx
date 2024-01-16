@@ -2,28 +2,56 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/LOGO.svg";
 import Avatar from "../assets/avatar.svg";
 import { MdOutlineSearch, MdOutlineNotifications } from "react-icons/md";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const navLinkStyles =
     "text-base hover:text-primary-500 transition font-semibold uppercase";
+  const [isNavbarActive, setIsNavbarActive] = useState(false);
+  const navbarRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const showNavbarOnScroll = () => {
+      const scrollValue = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollValue >= 140) {
+        setIsNavbarActive(true);
+      } else {
+        setIsNavbarActive(false);
+      }
+    };
+
+    window.addEventListener("scroll", showNavbarOnScroll);
+    navbarRef.current?.addEventListener("animationend", () =>
+      console.log("Animation ended")
+    );
+
+    return () => {
+      window.removeEventListener("scroll", showNavbarOnScroll);
+    };
+  }, []);
 
   return (
     <div
-      className="
-        w-full
-        h-16
-        flex 
-        items-center
-        justify-between
-        px-10
-        fixed
-        top-0
-        z-10
-        bg-gradient-to-b
-        from-background-500
-        via-background-500/80
-        to-transparent
-        "
+      className={`
+      w-full
+      h-16
+      flex 
+      items-center
+      justify-between
+      px-10
+      fixed
+      top-0
+      z-10
+     
+      ${
+        isNavbarActive
+          ? "bg-navbar shadow fadeIn"
+          : " bg-gradient-to-b from-background-500 via-background-500/80 to-transparent"
+      }
+
+      `}
+      ref={navbarRef}
     >
       <div className="flex items-center gap-12">
         {/* Logo */}

@@ -19,3 +19,20 @@
     @apply bg-white/30 rounded-full;
   }
 }
+
+@layer components {
+  .fadeIn {
+    animation: fadeIn 0.6s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
