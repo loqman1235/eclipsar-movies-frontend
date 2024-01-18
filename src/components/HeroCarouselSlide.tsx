@@ -1,5 +1,12 @@
 import { MdPlayArrow, MdVideocam } from "react-icons/md";
 import { IMovie } from "../types";
+import AnimatedText from "./common/AnimatedText";
+import { motion } from "framer-motion";
+
+const textVars = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+};
 
 const HeroCarouselSlide: React.FC<IMovie> = ({
   title,
@@ -39,9 +46,18 @@ const HeroCarouselSlide: React.FC<IMovie> = ({
         />
       </div>
       <div className="absolute top-1/2 left-10 -translate-y-1/2 w-3/4 md:w-1/2">
-        <h1 className="text-3xl tracking-tighter md:text-4xl uppercase font-extrabold  drop-shadow leading-[40px] mb-1 md:mb-2 bg-clip-text bg-gradient-to-t from-gray-100  to-white text-transparent">
-          {title}
-        </h1>
+        <motion.h1
+          initial="initial"
+          animate="animate"
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+            staggerChildren: 0.5,
+          }}
+          className="text-3xl tracking-tighter md:text-4xl uppercase font-extrabold  drop-shadow leading-[40px] mb-1 md:mb-2 bg-clip-text bg-gradient-to-t from-gray-100  to-white text-transparent"
+        >
+          <AnimatedText text={title} animationVars={textVars} />
+        </motion.h1>
         <div className="flex items-center gap-3 mb-1 md:mb-2 w-full font-semibold">
           <p>{releaseDate}</p>
           <span className="w-1 h-1 bg-white rounded-full"></span>

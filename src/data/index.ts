@@ -3,25 +3,25 @@ import { ICollection, IMovie } from "../types";
 export const heroCarouselData: IMovie[] = [
   {
     _id: "1",
-    title: "Thanksgiving",
-    overview:
-      "After a Black Friday riot ends in tragedy, a mysterious Thanksgiving-inspired killer terrorizes Plymouth, Massachusetts - the birthplace of the holiday. Picking off residents one by one, what begins as random revenge killings are soon revealed to be part of a larger, sinister holiday plan.",
-    releaseDate: "2023",
-    runtime: "1h 46m",
-    genres: ["Horror", "Mystery", "Thriller"],
-    backdrop:
-      "https://image.tmdb.org/t/p/original/meRwi0lVzv7cMnLNJKoZY59krMp.jpg",
-  },
-  {
-    _id: "2",
     title: "Aquaman and the Lost Kingdom",
     overview:
       "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
     releaseDate: "2023",
+    runtime: "1h 46m",
+    genres: ["Horror", "Mystery", "Thriller"],
+    backdrop:
+      "https://image.tmdb.org/t/p/original/iNgn9LP0iMuLSnWqolivcY3Y7F6.jpg",
+  },
+  {
+    _id: "2",
+    title: "Thanksgiving", //
+    overview:
+      "After a Black Friday riot ends in tragedy, a mysterious Thanksgiving-inspired killer terrorizes Plymouth, Massachusetts - the birthplace of the holiday. Picking off residents one by one, what begins as random revenge killings are soon revealed to be part of a larger, sinister holiday plan.",
+    releaseDate: "2023",
     runtime: "2h 4m",
     genres: ["Action", "Adventure", "Fantasy"],
     backdrop:
-      "https://image.tmdb.org/t/p/original/iNgn9LP0iMuLSnWqolivcY3Y7F6.jpg",
+      "https://image.tmdb.org/t/p/original/meRwi0lVzv7cMnLNJKoZY59krMp.jpg",
   },
   {
     _id: "3",
