@@ -21,10 +21,8 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({
 }) => {
   return (
     <div className={className}>
-      <span className="text-sm uppercase tracking-widest mb-3 block">
-        {label}
-      </span>
-      <ul className="flex flex-col gap-2">
+      <span className="text-sm  uppercase mb-3 block">{label}</span>
+      <ul className="flex flex-col gap-4">
         {links.map(({ text, icon, path }, index) => (
           <li key={text + "-" + index}>
             {path ? (

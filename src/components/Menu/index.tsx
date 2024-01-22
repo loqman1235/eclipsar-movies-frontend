@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MenuCategory from "./MenuCategory";
 import {
   categoryLinks,
@@ -6,6 +5,7 @@ import {
   libraryLinks,
   menuLinks,
 } from "../../data";
+import Brand from "../common/Brand";
 
 const Menu = () => {
   return (
@@ -24,17 +24,24 @@ const Menu = () => {
     "
     >
       {/* Brand */}
-      <Link
-        to="/"
-        className="font-bold text-2xl tracking-tight block pl-5 pt-5  h-[80px]"
-      >
-        Flix<span className="text-primary">Flow</span>
-      </Link>
+      <Brand />
 
-      <div className="flex flex-col gap-10 min-h-[calc(100vh-80px)] p-5 ">
-        <MenuCategory label="Menu" links={menuLinks} />
-        <MenuCategory label="library" links={libraryLinks} />
-        <MenuCategory label="category" links={categoryLinks} />
+      <div className="flex flex-col gap-8 min-h-[calc(100vh-80px)] p-5 ">
+        <MenuCategory
+          label="Menu"
+          links={menuLinks}
+          className="border-b border-b-white/5 pb-10"
+        />
+        <MenuCategory
+          label="library"
+          links={libraryLinks}
+          className="border-b border-b-white/5 pb-10"
+        />
+        <MenuCategory
+          label="category"
+          links={categoryLinks}
+          className="border-b border-b-white/5 pb-10"
+        />
         <MenuCategory
           label="general"
           links={generalLinks}
