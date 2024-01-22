@@ -5,7 +5,7 @@ import {
   libraryLinks,
   menuLinks,
 } from "../../data";
-import Brand from "../common/Brand";
+import Brand from "../Common/Brand";
 
 const Menu = () => {
   return (
