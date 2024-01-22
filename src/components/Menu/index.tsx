@@ -11,7 +11,9 @@ const Menu = () => {
   return (
     <div
       className="
-        w-menu
+        w-menu-mobile
+        sm:w-mobile
+        md:w-menu
         h-screen
         overflow-y-auto
         fixed

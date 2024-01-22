@@ -5,10 +5,10 @@ const Brand = () => {
   return (
     <Link
       to="/"
-      className="font-bold text-2xl tracking-tight inline-flex gap-2  pl-5 pt-5  h-[80px]"
+      className="font-bold text-2xl tracking-tight inline-flex gap-2  pl-5 pt-5 h-[80px]"
     >
       <BrandIcon />
-      <span>FlixFlow</span>
+      <span className="hidden  md:block">FlixFlow</span>
     </Link>
   );
 };

@@ -12,7 +12,8 @@ interface MenuCategoryProps {
   links: LinkType[];
 }
 
-const textStyles = "text-secondary hover:text-white transition text-base";
+const textStyles =
+  "text-secondary hover:text-white transition text-base hidden md:block";
 
 const MenuCategory: React.FC<MenuCategoryProps> = ({
   label,
@@ -21,7 +22,7 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({
 }) => {
   return (
     <div className={className}>
-      <span className="text-sm  uppercase mb-3 block">{label}</span>
+      <span className="text-sm  uppercase mb-3 hidden md:block">{label}</span>
       <ul className="flex flex-col gap-4">
         {links.map(({ text, icon, path }, index) => (
           <li key={text + "-" + index}>

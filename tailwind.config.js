@@ -9,7 +9,8 @@ export default {
       },
       width: {
         menu: "var(--menu-width)",
-        "left-sidebar": "var(--left-sidebar-width)",
+        "menu-mobile": "var(--menu-width-mobile)",
+        "right-sidebar": "var(--right-sidebar-width)",
       },
     },
     fontFamily: {

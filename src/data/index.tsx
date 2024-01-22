@@ -300,6 +300,21 @@ export const generalLinks = [
   },
 ];
 
+export const navLinks = [
+  {
+    text: "Movies",
+    path: "/",
+  },
+  {
+    text: "TV Shows",
+    path: "/tvshows",
+  },
+  {
+    text: "Anime",
+    path: "/anime",
+  },
+];
+
 export const heroCarouselData: IMovie[] = [
   {
     _id: "1",
