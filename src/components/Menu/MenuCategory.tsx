@@ -7,17 +7,24 @@ type LinkType = {
 };
 
 interface MenuCategoryProps {
+  className?: string;
   label: string;
   links: LinkType[];
 }
 
-const textStyles = "text-secondary hover:text-white transition text-lg";
+const textStyles = "text-secondary hover:text-white transition text-base";
 
-const MenuCategory: React.FC<MenuCategoryProps> = ({ label, links }) => {
+const MenuCategory: React.FC<MenuCategoryProps> = ({
+  label,
+  links,
+  className,
+}) => {
   return (
-    <div>
-      <span className="text-sm uppercase">{label}</span>
-      <ul>
+    <div className={className}>
+      <span className="text-sm uppercase tracking-widest mb-3 block">
+        {label}
+      </span>
+      <ul className="flex flex-col gap-2">
         {links.map(({ text, icon, path }, index) => (
           <li key={text + "-" + index}>
             {path ? (

@@ -20,12 +20,12 @@
   }
 }
 
-/* @layer utilities {
+@layer utilities {
   ::-webkit-scrollbar {
-    @apply w-2 bg-background-500;
+    @apply w-2 bg-white/10;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-white/30 rounded-full;
+    @apply bg-white/20 rounded-full hover:bg-white/30 transition;
   }
-} */
+}
