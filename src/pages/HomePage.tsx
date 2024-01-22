@@ -1,13 +1,9 @@
-import Collections from "../components/Collections";
-import HeroCarousel from "../components/HeroCarousel";
-import Navbar from "../components/Navbar";
+import Menu from "../components/Menu";
 
 const HomePage = () => {
   return (
     <>
-      <Navbar />
-      <HeroCarousel />
-      <Collections />
+      <Menu />
     </>
   );
 };
