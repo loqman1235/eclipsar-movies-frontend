@@ -25,7 +25,6 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({
 }) => {
   const location = useLocation();
   const currentPath = location.pathname;
-  console.log(currentPath, "currentPath");
   return (
     <div className={className}>
       <span className="text-sm  uppercase mb-3 hidden md:block">{label}</span>
@@ -48,7 +47,7 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({
                   </div>
                   <span
                     className={`${textStyles} ${
-                      currentPath === path && "text-primary"
+                      currentPath === path && "!text-primary"
                     }`}
                   >
                     {text}
@@ -64,7 +63,7 @@ const MenuCategory: React.FC<MenuCategoryProps> = ({
                   </div>
                   <span
                     className={`${textStyles} ${
-                      currentPath === path && "text-primary"
+                      currentPath === path && "!text-primary"
                     }`}
                   >
                     {text}
