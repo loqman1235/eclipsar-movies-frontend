@@ -32,17 +32,17 @@ const Menu = () => {
         <MenuCategory
           label="Menu"
           links={menuLinks}
-          className="border-b border-b-white/5 pb-10"
+          className="border-b border-b-white/10 pb-10"
         />
         <MenuCategory
           label="library"
           links={libraryLinks}
-          className="border-b border-b-white/5 pb-10"
+          className="border-b border-b-white/10 pb-10"
         />
         <MenuCategory
           label="category"
           links={categoryLinks}
-          className="border-b border-b-white/5 pb-10"
+          className="border-b border-b-white/10 pb-10"
         />
         <MenuCategory
           label="general"
