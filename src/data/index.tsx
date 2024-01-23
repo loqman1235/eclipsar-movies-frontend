@@ -1,20 +1,25 @@
-import Svg from "../components/Icons/Svg";
+import Svg from "../Icons/Svg";
 import { ICollection, IMovie } from "../types";
 
 export const menuLinks = [
   {
     path: "/",
     icon: <Svg icon="home" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="home" color="var(--secondary-color)" size={28} />,
     text: "Home",
   },
   {
     path: "/discover",
     icon: <Svg icon="discover" color="var(--secondary-color)" size={20} />,
+    mobileIcon: (
+      <Svg icon="discover" color="var(--secondary-color)" size={28} />
+    ),
     text: "Discover",
   },
   {
     path: "/soon",
     icon: <Svg icon="clock" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="clock" color="var(--secondary-color)" size={28} />,
     text: "Coming Soon",
   },
 ];
@@ -23,16 +28,19 @@ export const libraryLinks = [
   {
     path: "/favorites",
     icon: <Svg icon="heart" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="heart" color="var(--secondary-color)" size={28} />,
     text: "Favorites",
   },
   {
     path: "/collection-1",
     icon: <Svg icon="folder" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="folder" color="var(--secondary-color)" size={28} />,
     text: "Collection #1",
   },
   {
     path: "/collection-2",
     icon: <Svg icon="folder" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="folder" color="var(--secondary-color)" size={28} />,
     text: "Collection #2",
   },
 ];
@@ -41,16 +49,21 @@ export const categoryLinks = [
   {
     path: "/movies",
     icon: <Svg icon="movie" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="movie" color="var(--secondary-color)" size={28} />,
     text: "Movies",
   },
   {
     path: "/tvshows",
     icon: <Svg icon="tv" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="tv" color="var(--secondary-color)" size={28} />,
     text: "TV Shows",
   },
   {
     path: "/anime",
     icon: <Svg icon="play-rect" color="var(--secondary-color)" size={20} />,
+    mobileIcon: (
+      <Svg icon="play-rect" color="var(--secondary-color)" size={28} />
+    ),
     text: "Anime",
   },
 ];
@@ -59,10 +72,14 @@ export const generalLinks = [
   {
     path: "/settings",
     icon: <Svg icon="settings" color="var(--secondary-color)" size={20} />,
+    mobileIcon: (
+      <Svg icon="settings" color="var(--secondary-color)" size={28} />
+    ),
     text: "Settings",
   },
   {
     icon: <Svg icon="logout" color="var(--secondary-color)" size={20} />,
+    mobileIcon: <Svg icon="logout" color="var(--secondary-color)" size={28} />,
     text: "Logout",
   },
 ];
