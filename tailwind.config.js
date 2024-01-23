@@ -5,6 +5,7 @@ export default {
       colors: {
         background: "var(--bg-color)",
         primary: "var(--primary-color)",
+        "primary-hover": "var(--primary-color-hover)",
         secondary: "var(--secondary-color)",
       },
       width: {

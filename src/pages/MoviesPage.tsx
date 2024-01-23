@@ -1,4 +1,10 @@
+import BannerCarousel from "../components/BannerCarousel";
+
 const MoviesPage = () => {
-  return <div>MoviesPage</div>;
+  return (
+    <>
+      <BannerCarousel />
+    </>
+  );
 };
 export default MoviesPage;
