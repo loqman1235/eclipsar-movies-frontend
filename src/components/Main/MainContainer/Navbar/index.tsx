@@ -1,5 +1,5 @@
 import { navLinks } from "../../../../data";
-import BellIcon from "../../../Icons/BellIcon";
+import Svg from "../../../Icons/Svg";
 import NavItem from "./NavItem";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <ul className="flex items-center gap-6">
         <button className="relative">
-          <BellIcon />
+          <Svg icon="bell" />
           <span className="absolute -right-[2px] -top-[2px] w-3 h-3 border-2 border-background rounded-full bg-primary"></span>
         </button>
 

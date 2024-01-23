@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BrandIcon from "../Icons/BrandIcon";
+import Svg from "../Icons/Svg";
 
 const Brand = () => {
   return (
@@ -7,7 +7,7 @@ const Brand = () => {
       to="/"
       className="font-bold text-2xl tracking-tight inline-flex gap-2  pl-5 pt-5 h-[80px]"
     >
-      <BrandIcon />
+      <Svg icon="brand" size={28} color="var(--primary-color)" />
       <span className="hidden  md:block">FlixFlow</span>
     </Link>
   );
