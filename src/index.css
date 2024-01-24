@@ -8,8 +8,8 @@
 
 :root {
   --bg-color: #1a1a1d;
-  --primary-color: #ec2323;
-  --primary-color-hover: #dd1c1c;
+  --primary-color: #ec2323; /* 41cea4 */
+  --primary-color-hover: #dd1c1c; /* 552d9d*/
   --secondary-color: #8c8c8e;
   --menu-width: 240px;
   --menu-width-mobile: 80px;
