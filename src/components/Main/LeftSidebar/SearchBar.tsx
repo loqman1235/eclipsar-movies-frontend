@@ -2,7 +2,7 @@ import Svg from "../../../Icons/Svg";
 
 const SearchBar = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full mb-10">
       <form className="w-full h-[52px] relative">
         <input
           type="text"

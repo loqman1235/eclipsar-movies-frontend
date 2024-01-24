@@ -479,7 +479,7 @@ export const moviesData: IMedia[] = [
   },
 ];
 
-export const topRatedMoviesData: IMedia[]  = [
+export const topRatedMoviesData: IMedia[] = [
   {
     _id: "1",
     title: "Wonka",
@@ -544,5 +544,47 @@ export const topRatedMoviesData: IMedia[]  = [
       "https://image.tmdb.org/t/p/original/aTydnWgZ32m41DnTIb7paXsLBs8.jpg",
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zgBW2eNkN0Ez09GgRaWret90C1T.jpg",
+  },
+];
+
+export const popularMediaData: IMedia[] = [
+  {
+    _id: "1",
+    title: "Wonka",
+    overview:
+      "After a Black Friday riot ends in tragedy, a mysterious Thanksgiving-inspired killer terrorizes Plymouth, Massachusetts - the birthplace of the holiday. Picking off residents one by one, what begins as random revenge killings are soon revealed to be part of a larger, sinister holiday plan.",
+    releaseDate: "2023",
+    runtime: "1h 46m",
+    genres: ["Horror", "Mystery", "Thriller"],
+    backdrop:
+      "https://image.tmdb.org/t/p/original/95ldoFNgoYinCn9K4D7JoIHDv4g.jpg",
+    poster:
+      "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+  },
+  {
+    _id: "2",
+    title: "Trolls Band Together",
+    overview:
+      "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
+    releaseDate: "2023",
+    runtime: "2h 4m",
+    genres: ["Action", "Adventure", "Fantasy"],
+    backdrop:
+      "https://image.tmdb.org/t/p/original/c6msiFybhohrgaBYxfR5gyDkn6L.jpg",
+    poster:
+      "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bkpPTZUdq31UGDovmszsg2CchiI.jpg",
+  },
+  {
+    _id: "3",
+    title: "The Family Plan",
+    overview:
+      "One man’s campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
+    releaseDate: "2024",
+    runtime: "1h 45m",
+    genres: ["Action", "Thriller"],
+    backdrop:
+      "https://image.tmdb.org/t/p/original/2R8VCFxHjcFbMwWepWd9QBH1AyF.jpg",
+    poster:
+      "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/a6syn9qcU4a54Lmi3JoIr1XvhFU.jpg",
   },
 ];
