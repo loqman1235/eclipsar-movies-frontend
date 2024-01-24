@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import BannerCarouselSlide from "./BannerCarouselSlide";
-import { heroCarouselData } from "../../data";
+import { heroCarouselData } from "@/data";
 
 const BannerCarousel = () => {
   return (

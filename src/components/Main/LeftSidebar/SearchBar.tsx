@@ -1,4 +1,4 @@
-import Svg from "../../../Icons/Svg";
+import Svg from "@/Icons/Svg";
 
 const SearchBar = () => {
   return (

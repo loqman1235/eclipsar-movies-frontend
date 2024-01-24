@@ -1,9 +1,9 @@
 export interface IMedia {
   _id: string;
   title: string;
-  overview: string;
-  releaseDate: string;
-  runtime: string;
+  overview?: string;
+  releaseDate?: string;
+  runtime?: string;
   genres: string[];
   backdrop?: string;
   backdropWithText?: string;

@@ -1,11 +1,6 @@
-import MenuCategory from "./MenuCategory";
-import {
-  categoryLinks,
-  generalLinks,
-  libraryLinks,
-  menuLinks,
-} from "../../data";
 import Brand from "../Common/Brand";
+import MenuCategory from "./MenuCategory";
+import { categoryLinks, generalLinks, libraryLinks, menuLinks } from "@/data";
 
 const Menu = () => {
   return (

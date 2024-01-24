@@ -1,5 +1,5 @@
-import { IMedia } from "../../../../types";
-import Button from "../../../Common/Button";
+import { IMedia } from "@/types";
+import Button from "@/components/Common/Button";
 import SidebarSectionMedia from "./SidebarSectionMedia";
 
 interface SidebarSectionProps {

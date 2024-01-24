@@ -1,4 +1,4 @@
-import { popularMediaData } from "../../../data";
+import { popularMediaData } from "@/data";
 import SearchBar from "./SearchBar";
 import SidebarSection from "./SidebarSection";
 

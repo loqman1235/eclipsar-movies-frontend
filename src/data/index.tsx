@@ -1,5 +1,5 @@
-import Svg from "../Icons/Svg";
-import { ICollection, IMedia } from "../types";
+import Svg from "@/Icons/Svg";
+import { ICollection, IMedia } from "@/types";
 
 export const menuLinks = [
   {

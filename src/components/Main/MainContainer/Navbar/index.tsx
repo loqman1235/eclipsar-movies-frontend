@@ -1,5 +1,5 @@
-import { navLinks } from "../../../../data";
-import Svg from "../../../../Icons/Svg";
+import { navLinks } from "@/data";
+import Svg from "@/Icons/Svg";
 import NavItem from "./NavItem";
 
 const Navbar = () => {

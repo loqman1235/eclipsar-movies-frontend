@@ -1,16 +1,7 @@
+import { IMedia } from "@/types";
 import { MdAdd } from "react-icons/md";
 
-interface BannerCarouselSlideProps {
-  backdrop: string;
-  title: string;
-  genres: string[];
-}
-
-const BannerCarouselSlide: React.FC<BannerCarouselSlideProps> = ({
-  backdrop,
-  title,
-  genres,
-}) => {
+const BannerCarouselSlide: React.FC<IMedia> = ({ backdrop, title, genres }) => {
   return (
     <div className="w-full h-full relative">
       {/* Carousel slide backdrop */}
