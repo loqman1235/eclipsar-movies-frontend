@@ -1,5 +1,6 @@
 import { IMedia } from "@/types";
-import { MdAdd } from "react-icons/md";
+import { MdAdd, MdPlayArrow } from "react-icons/md";
+import Button from "../Common/Button";
 
 const BannerCarouselSlide: React.FC<IMedia> = ({ backdrop, title, genres }) => {
   return (
@@ -63,12 +64,13 @@ const BannerCarouselSlide: React.FC<IMedia> = ({ backdrop, title, genres }) => {
 
         {/* CTAs */}
         <div className="flex items-center gap-2">
-          <button className="px-6 py-3 flex items-center justify-center gap-1 bg-primary hover:bg-primary-hover transition rounded-2xl font-medium">
-            Watch Now
-          </button>
-          <button className="px-4 py-3 flex items-center justify-center bg-white/10 hover:bg-white/20 transition rounded-2xl font-medium backdrop-blur-sm">
+          <Button variant="primary" size="md">
+            <MdPlayArrow size={24} /> Play Now
+          </Button>
+
+          <Button variant="secondary" size="md">
             <MdAdd size={24} />
-          </button>
+          </Button>
         </div>
       </div>
     </div>

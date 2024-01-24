@@ -5,7 +5,7 @@ import { heroCarouselData } from "@/data";
 
 const BannerCarousel = () => {
   return (
-    <div className="w-full h-[320px] rounded-2xl overflow-hidden mb-10">
+    <div className="w-full h-[320px] rounded-2xl overflow-hidden">
       <Swiper
         slidesPerView={1}
         autoplay={{

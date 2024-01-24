@@ -1,4 +1,4 @@
-import { IMedia } from "../../types";
+import { IMedia } from "@/types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import CollectionItem from "./CollectionItem";
@@ -10,12 +10,12 @@ interface CollectionProps {
 
 const Collection: React.FC<CollectionProps> = ({ name, mediaItems }) => {
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div className="w-full flex items-center justify-between mb-2">
         <h2 className="text-xl font-semibold tracking-tight">{name}</h2>
       </div>
 
-      <Swiper slidesPerView={3.5} spaceBetween={10}>
+      <Swiper slidesPerView={4} spaceBetween={10}>
         {mediaItems.map((item, index) => (
           <SwiperSlide key={item + "-" + index}>
             <CollectionItem {...item} />

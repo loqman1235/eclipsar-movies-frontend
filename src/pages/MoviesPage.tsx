@@ -4,10 +4,9 @@ import { moviesData, topRatedMoviesData } from "@/data";
 
 const MoviesPage = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-10">
       <BannerCarousel />
       <Collection name="Now Playing" mediaItems={moviesData} />
-      <Collection name="Top Rated" mediaItems={topRatedMoviesData} />
       <Collection name="Top Rated" mediaItems={topRatedMoviesData} />
     </div>
   );
