@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div className="w-10 h-10 rounded-full bg-white/50 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://scontent.fczl2-1.fna.fbcdn.net/v/t39.30808-6/416679416_1989885911397086_7112518757134319075_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=sTuSiP6Qt5UAX9wKMKV&_nc_ht=scontent.fczl2-1.fna&oh=00_AfAOzZbRBR0Zfa5wil9gpT22uLVkSWRmGpSxkO7OfN4wlQ&oe=65B56113"
             alt="avatar"
             className="w-full h-full object-cover"
           />

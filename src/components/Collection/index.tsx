@@ -15,7 +15,24 @@ const Collection: React.FC<CollectionProps> = ({ name, mediaItems }) => {
         <h2 className="text-xl font-semibold tracking-tight">{name}</h2>
       </div>
 
-      <Swiper slidesPerView={4} spaceBetween={10}>
+      <Swiper
+        spaceBetween={10}
+        breakpoints={{
+          320: {
+            slidesPerView: 1.5,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 1.5,
+          },
+
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
+      >
         {mediaItems.map((item, index) => (
           <SwiperSlide key={item + "-" + index}>
             <CollectionItem {...item} />

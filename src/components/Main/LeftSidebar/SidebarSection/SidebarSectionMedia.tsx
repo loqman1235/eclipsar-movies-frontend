@@ -19,13 +19,13 @@ const SidebarSectionMedia: React.FC<SidebarSectionMediaProps> = ({
       <div className="flex flex-col gap-1">
         <h2 className="font-semibold">{title}</h2>
         <ul>
-          <li className="text-secondary">Action, Drama</li>
+          <li className="text-secondary text-[15px]">Action, Drama</li>
         </ul>
         <div className="flex items-center gap-1">
-          <span className="text-yellow-400">
-            <HiStar size={20} />
+          <span className="text-yellow-400 flex items-center justify-center">
+            <HiStar size={16} />
           </span>
-          <span className="font-semibold">8.1</span>
+          <span className="font-semibold text-sm">8.1</span>
         </div>
       </div>
     </div>
