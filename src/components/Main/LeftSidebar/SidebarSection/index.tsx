@@ -8,7 +8,7 @@ interface SidebarSectionProps {
 
 const SidebarSection: React.FC<SidebarSectionProps> = ({ name, media }) => {
   return (
-    <div className="w-full">
+    <div className="w-full mb-10">
       <div className="flex items-center justify-between mb-5">
         <h2 className="text-xl font-semibold tracking-tight">{name}</h2>
       </div>

@@ -10,7 +10,7 @@ interface CollectionProps {
 
 const Collection: React.FC<CollectionProps> = ({ name, mediaItems }) => {
   return (
-    <div className="w-full mb-10">
+    <div className="w-full ">
       <div className="w-full flex items-center justify-between mb-2">
         <h2 className="text-xl font-semibold tracking-tight">{name}</h2>
       </div>

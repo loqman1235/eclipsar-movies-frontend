@@ -45,7 +45,7 @@ const BannerCarouselSlide: React.FC<BannerCarouselSlideProps> = ({
         w-[70%]
       "
       >
-        <h1 className="text-xl font-semibold uppercase tracking-tight mb-1">
+        <h1 className="text-xl font-semibold capitalize tracking-tight mb-1">
           {title}
         </h1>
 
