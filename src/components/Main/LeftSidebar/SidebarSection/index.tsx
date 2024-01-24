@@ -1,4 +1,5 @@
 import { IMedia } from "../../../../types";
+import Button from "../../../Common/Button";
 import SidebarSectionMedia from "./SidebarSectionMedia";
 
 interface SidebarSectionProps {
@@ -17,9 +18,7 @@ const SidebarSection: React.FC<SidebarSectionProps> = ({ name, media }) => {
           <SidebarSectionMedia key={item._id} {...item} />
         ))}
       </div>
-      <button className="w-full py-4 flex items-center justify-center gap-1 bg-primary hover:bg-primary-hover transition rounded-2xl font-medium">
-        See More
-      </button>
+      <Button text="See More" variant="primary" />
     </div>
   );
 };
