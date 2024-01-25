@@ -1,5 +1,5 @@
-import { MdPlayArrow } from "react-icons/md";
-import { Link } from "react-router-dom";
+//import { MdPlayArrow } from "react-icons/md";
+//import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 interface CollectionItemProps {
@@ -15,6 +15,7 @@ const CollectionItem: React.FC<CollectionItemProps> = ({ poster, title }) => {
       </div>
 
       {/* Overlay */}
+
       {/*<motion.div className="absolute inset-0 bg-black/80 backdrop-blur-sm z-20 w-full h-full flex items-center justify-center">
         <Link
           to={`/collection/${title}`}
@@ -25,7 +26,8 @@ const CollectionItem: React.FC<CollectionItemProps> = ({ poster, title }) => {
           </motion.span>
         </Link>
       </motion.div>
-    </motion.div> *}
+    </motion.div>*/}
+    </motion.div>
   );
 };
 export default CollectionItem;
