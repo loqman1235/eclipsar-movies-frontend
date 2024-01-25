@@ -20,8 +20,8 @@ const SidebarSection: React.FC<SidebarSectionProps> = ({ name, media }) => {
       </div>
       <div className="flex flex-col gap-2 mb-2">
         {media.map((item) => (
-          <Link to={`/media/${item._id}`}>
-            <SidebarSectionMedia key={item._id} {...item} />
+          <Link key={item._id} to={`/media/${item._id}`}>
+            <SidebarSectionMedia {...item} />
           </Link>
         ))}
       </div>

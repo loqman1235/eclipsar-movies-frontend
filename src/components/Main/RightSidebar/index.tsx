@@ -2,7 +2,7 @@ import { popularMediaData } from "@/data";
 import SearchBar from "./SearchBar";
 import SidebarSection from "./SidebarSection";
 
-const LeftSidebar = () => {
+const RightSidebar = () => {
   return (
     <div
       className="w-right-sidebar border-l-2
@@ -16,4 +16,4 @@ const LeftSidebar = () => {
     </div>
   );
 };
-export default LeftSidebar;
+export default RightSidebar;
