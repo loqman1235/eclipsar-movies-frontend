@@ -7,10 +7,10 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #1a1a1d;
-  --primary-color: #ec2323; /* 41cea4 */
-  --primary-color-hover: #dd1c1c; /* 552d9d*/
-  --secondary-color: #8c8c8e;
+  --bg-color: rgb(26, 26, 29);
+  --primary-color: rgb(236, 35, 35); /* 41cea4 */
+  --primary-color-hover: rgb(221, 28, 28); /* 552d9d*/
+  --secondary-color: rgb(140, 140, 143);
   --menu-width: 240px;
   --menu-width-mobile: 80px;
   --right-sidebar-width: 340px;
