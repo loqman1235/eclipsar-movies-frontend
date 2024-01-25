@@ -15,7 +15,7 @@ const CollectionItem: React.FC<CollectionItemProps> = ({ poster, title }) => {
       </div>
 
       {/* Overlay */}
-      <motion.div className="absolute inset-0 bg-black/80 backdrop-blur-sm z-20 w-full h-full flex items-center justify-center">
+      {/*<motion.div className="absolute inset-0 bg-black/80 backdrop-blur-sm z-20 w-full h-full flex items-center justify-center">
         <Link
           to={`/collection/${title}`}
           className="w-16 h-16 rounded-full flex items-center justify-center bg-primary text-white"
@@ -25,7 +25,7 @@ const CollectionItem: React.FC<CollectionItemProps> = ({ poster, title }) => {
           </motion.span>
         </Link>
       </motion.div>
-    </motion.div>
+    </motion.div> *}
   );
 };
 export default CollectionItem;
