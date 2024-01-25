@@ -24,7 +24,7 @@ const Collection: React.FC<CollectionProps> = ({ name, mediaItems }) => {
         speed={500}
         spaceBetween={10}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           pauseOnMouseEnter: true,
         }}
         breakpoints={{
