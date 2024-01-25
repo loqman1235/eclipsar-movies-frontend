@@ -1,7 +1,9 @@
 import { IMedia } from "@/types";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
+import { Autoplay } from "swiper/modules";
 import CollectionItem from "./CollectionItem";
+import "swiper/css";
+import "swiper/css/autoplay";
 
 interface CollectionProps {
   name: string;
@@ -16,7 +18,15 @@ const Collection: React.FC<CollectionProps> = ({ name, mediaItems }) => {
       </div>
 
       <Swiper
+        modules={[Autoplay]}
+        slidesPerView={4}
+        loop
+        speed={500}
         spaceBetween={10}
+        autoplay={{
+          delay: 2000,
+          pauseOnMouseEnter: true,
+        }}
         breakpoints={{
           320: {
             slidesPerView: 1.5,
